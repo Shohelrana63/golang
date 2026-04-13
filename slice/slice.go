@@ -8,16 +8,21 @@ package main
 import "fmt"
 
 func main() {
-	arr := [6]string{"Go", "is", "a", "programming", "language", "!"}
-	slice := arr[1:4]
-	fmt.Println(slice) //[is a programming]
+	// arr := [6]string{"Go", "is", "a", "programming", "language", "!"}
+	// slice := arr[1:4]
+	// fmt.Println(slice) //[is a programming]
 
-	slice1 := slice[1:3]
-	fmt.Println(slice1) //[a programming]
+	// slice1 := slice[1:3]
+	// fmt.Println(slice1) //[a programming]
 
-	slice2 := slice1[0:1]
-	fmt.Println(slice2)      //[a]
-	fmt.Println(len(slice2)) //1
-	fmt.Println(cap(slice2)) //3
+	// slice2 := slice1[0:1]
+	// fmt.Println(slice2)      //[a]
+	// fmt.Println(len(slice2)) //1
+	// fmt.Println(cap(slice2)) //3
+
+	s := []int{1, 2, 3, 4, 5}
+	fmt.Println("slice", s,
+		"len", len(s),
+		"cap", cap(s)) // [1 2 3 4 5]
 
 }
