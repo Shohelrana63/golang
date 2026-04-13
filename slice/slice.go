@@ -16,6 +16,8 @@ func main() {
 	fmt.Println(slice1) //[a programming]
 
 	slice2 := slice1[0:1]
-	fmt.Println(slice2) //[a]
+	fmt.Println(slice2)      //[a]
+	fmt.Println(len(slice2)) //1
+	fmt.Println(cap(slice2)) //3
 
 }
