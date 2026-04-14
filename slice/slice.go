@@ -25,10 +25,25 @@ func main() {
 	// 	"len", len(s),
 	// 	"cap", cap(s)) // [1 2 3 4 5]
 
-	s := make([]int, 3)
+	// s := make([]int, 3)
 
-	fmt.Println("slice", s)
-	fmt.Println("len", len(s))
-	fmt.Println("cap", cap(s))
+	// fmt.Println("slice", s)
+	// fmt.Println("len", len(s))
+	// fmt.Println("cap", cap(s))
 
+	var x []int
+	x = append(x, 1)
+	x = append(x, 2)
+	x = append(x, 3)
+
+	fmt.Println(x)      //[1 2 3]
+	fmt.Println(len(x)) //3
+	fmt.Println(cap(x)) //4
+	y := x
+	fmt.Println(y) //[1 2 3]
+	x = append(x, 4)
+	y = append(y, 5)
+
+	fmt.Println(x) //[1 2 3 5]
+	fmt.Println(y) //[1 2 3 5]
 }
