@@ -8,10 +8,14 @@ import (
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "Hello World")
 }
+func aboutHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "I'M BAIG. I'M A SOFTWARE ENGINEER. I LOVE CODING AND LEARNING NEW THINGS.")
+}
 
 func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/hello", helloHandler)
+	mux.HandleFunc("/about", aboutHandler)
 	fmt.Println("Server running on :3000")
 
 	err := http.ListenAndServe(":3000", mux)
